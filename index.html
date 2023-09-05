@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Aldeen - CSCI 331 - Site 1</title>
     <style>
-        .centered {
-            text-align: center;
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
         }
         /*name = h1*/
         #name {
@@ -18,23 +21,26 @@
             /*color: COLOR;*/
             background-color: yellow;
         }
-        body {
-            font-family: sans-serif;
+        .centered {
+            text-align: center;
         }
         .split {
-            height: 100%;
+            /*height: 100%;*/
             width: 50%;
             position: fixed;
-            z-index: 1;
-            top: 0;
+            top: 40;
             overflow-x: hidden;
             padding-top: 20px;
         }
         .left {
             left: 0;
         }
-        .right{
+        .right {
             right: 0;
+        }
+        .tuesthurs {
+            color: #e0f6ef;
+            background-color: #6ab099;
         }
     </style>
 </head>
@@ -56,9 +62,9 @@
             <tr>
                 <th></th>
                 <th>Monday</th>
-                <th>Tuesday</th>
+                <th class="tuesthurs">Tuesday</th>
                 <th>Wednesday</th>
-                <th>Thursday</th>
+                <th class="tuesthurs">Thursday</th>
                 <th>Friday</th>
             </tr>
             <tr>
@@ -96,9 +102,9 @@
             <tr>
                 <td>3:00</td>
                 <td></td>
-                <td>CSCI-338</td>
+                <td class="tuesthurs">CSCI-338</td>
                 <td></td>
-                <td>CSCI-338</td>
+                <td class="tuesthurs">CSCI-338</td>
                 <td></td>
             </tr>
             <tr>
