@@ -4,46 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Aldeen - CSCI 331 - Site 1</title>
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-        table, tr, th, td{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        /*name = h1*/
-        #name {
-            color: darkslategrey;
-            /*background-color: COLOR;*/
-        }
-        /*netid = h2*/
-        #netid {
-            /*color: COLOR;*/
-            background-color: yellow;
-        }
-        .centered {
-            text-align: center;
-        }
-        .split {
-            /*height: XXX;*/
-            width: 44%;
-            position: fixed;
-            top: 44;
-            overflow-x: hidden;
-            border: 1px solid black;
-        }
-        .left {
-            left: 4%;
-        }
-        .right {
-            right: 4%;
-        }
-        .tuesthurs {
-            color: #e0f6ef;
-            background-color: #6ab099;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="Styles/main.css"/>
 </head>
 <body>
     <div class="centered">
@@ -53,8 +14,12 @@
     <!--<a href="https://yakamashii2.github.io">yakamashii2.github.io</a>-->
     <!--left side, form + interests-->
     <div class="left split">
-        <p>TBD, Form</p>
-
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
     </div>
     <!--Right side, schedule + prev courses, no border-->
     <div class="right split">

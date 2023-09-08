@@ -1,0 +1,39 @@
+
+body {
+    font-family: sans-serif;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/*name = h1*/
+#name {
+    color: darkslategrey;
+    /*background-color: COLOR;*/
+}
+/*netid = h2*/
+#netid {
+    /*color: COLOR;*/
+    background-color: yellow;
+}
+.centered {
+    text-align: center;
+}
+.split {
+    /*height: XXX;*/
+    width: 44%;
+    position: fixed;
+    top: 44;
+    overflow-x: hidden;
+            border: 1px solid black;
+        }
+        .left {
+            left: 4%;
+        }
+        .right {
+            right: 4%;
+        }
+        .tuesthurs {
+            color: #e0f6ef;
+    background-color: #6ab099;
+}
