@@ -25,15 +25,17 @@ table, tr, th, td{
     position: fixed;
     top: 44;
     overflow-x: hidden;
-            border: 1px solid black;
-        }
-        .left {
-            left: 4%;
-        }
-        .right {
-            right: 4%;
-        }
-        .tuesthurs {
-            color: #e0f6ef;
+    border: 1px solid black;
+    padding: 35px;
+}
+.left {
+    left: 4%;
+}
+.right {
+    right: 4%;
+}
+.tuesthurs {
+    color: #e0f6ef;
     background-color: #6ab099;
 }
+
