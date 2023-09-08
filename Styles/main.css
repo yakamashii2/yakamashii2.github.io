@@ -52,3 +52,6 @@ table, tr, th, td{
 .marginup{
     margin-top: 30px;
 }
+.gitlink {
+    margin-bottom: 10px;
+}
