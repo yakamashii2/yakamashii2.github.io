@@ -60,6 +60,15 @@ table, tr, th, td{
     margin-bottom: 10px;
 }
 .imglink {
-    margin: auto;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+.img {
     width: 20%;
+    border-radius: 80%;
+}
+.imglink:hover {
+    border: 1px solid purple;
+    
 }
