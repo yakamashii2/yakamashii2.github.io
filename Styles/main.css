@@ -19,31 +19,26 @@ table, tr, th, td{
 .centered {
     text-align: center;
 }
-/*
 .split {
-*/
-    /*height: XXX;*/
-    /*width: 44%;*/
-    /*overflow-x: hidden;
-    position: fixed;*/
-/*
-    top: 40;
+    /*height: XXX;
+    width: 44%;
+    overflow-x: hidden;
+    position: fixed;
+    top: 40;*/
     border: 1px solid black;
 }
-*/
 .grid {
     display: grid;
     grid-template-columns: 48% 48%;
     column-gap: 4%;
-    /*border: 1px solid black;*/
 }
-/*
+
 .left {
     left: 4%;
 }
 .right {
     right: 4%;
-}*/
+}
 .tuesthurs {
     color: #e0f6ef;
     background-color: #6ab099;
