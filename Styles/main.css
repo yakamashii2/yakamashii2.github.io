@@ -66,9 +66,9 @@ table, tr, th, td{
 .img {
     width: 400px;
     border: 1px solid black;
-    border-radius: 80%;
+    border-radius: 90%;
 }
 .img:hover {
-    border: 1px solid purple;
+    border-radius: 50%;
     
 }
