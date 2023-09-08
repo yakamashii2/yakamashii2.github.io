@@ -67,10 +67,8 @@ img {
     width: 400px;
     border: 1px solid black;
     border-radius: 5px;
+    transition:1s all;
 }
-img:hover {
-    border-radius: 50%;
-}
-.imglink:hover {
-    border-radius: 50%;
+img:hover .imglink:hover{
+    opacity: 0.5;
 }
