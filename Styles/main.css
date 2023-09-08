@@ -36,10 +36,12 @@ table, tr, th, td{
 }
 
 .left {
+    margin-top: 10px;
     left: 4%;
     border: 1px solid black;
 }
 .right {
+    margin-top: 10px;
     right: 4%;
     border: 1px solid black;
 }
