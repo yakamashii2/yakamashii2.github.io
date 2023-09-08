@@ -21,11 +21,18 @@ table, tr, th, td{
 }
 .split {
     /*height: XXX;*/
+    /*
     width: 44%;
+    overflow-x: hidden;
+    */
     position: fixed;
     top: 44;
-    overflow-x: hidden;
     border: 1px solid black;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
 }
 .left {
     left: 4%;
@@ -39,5 +46,7 @@ table, tr, th, td{
 }
 .pad {
     margin-left: 30px;
-
+}
+.marginup{
+    margin-top: 30px;
 }
