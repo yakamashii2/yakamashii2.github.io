@@ -61,6 +61,7 @@ table, tr, th, td{
 }
 .imglink {
     margin: 10px;
+    width: 400px;
 
 }
 img {
