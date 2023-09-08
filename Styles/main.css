@@ -66,9 +66,11 @@ table, tr, th, td{
 .img {
     width: 400px;
     border: 1px solid black;
-    border-radius: 90%;
+    border-radius: 15px;
 }
 .img:hover {
     border-radius: 50%;
-    
+}
+.imglink:hover {
+    border-radius: 50%;
 }
