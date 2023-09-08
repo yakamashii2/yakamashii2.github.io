@@ -21,10 +21,7 @@ table, tr, th, td{
 }
 .split {
     /*height: XXX;*/
-    /*
     width: 44%;
-    overflow-x: hidden;
-    */
     position: fixed;
     top: 44;
     border: 1px solid black;
