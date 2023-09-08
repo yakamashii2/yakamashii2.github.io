@@ -19,14 +19,18 @@ table, tr, th, td{
 .centered {
     text-align: center;
 }
+/*
 .split {
+*/
     /*height: XXX;*/
     /*width: 44%;*/
     /*overflow-x: hidden;
     position: fixed;*/
+/*
     top: 40;
     border: 1px solid black;
 }
+*/
 .grid {
     display: grid;
     grid-template-columns: 44% 44%;
