@@ -36,12 +36,13 @@ table, tr, th, td{
     grid-template-columns: 50% 50%;
     column-gap: 30px;
 }
+/*
 .left {
     left: 4%;
 }
 .right {
     right: 4%;
-}
+}*/
 .tuesthurs {
     color: #e0f6ef;
     background-color: #6ab099;
