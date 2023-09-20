@@ -22,11 +22,13 @@ function domLoaded() {
 // TODO: (Part of the above is to write the functions to be executed when the event handlers are invoked.)
 
 function convertCtoF(C) {
+   return (C * (9/5) + 32);
    // TODO: Return temp in °F. 
    // °F = °C * 9/5 + 32
 }
 
 function convertFtoC(F) {
+   return ((F - 32) * (5/9));
    // TODO: Return temp in °C. 
    // °C = (°F - 32) * 5/9
 }
