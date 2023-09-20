@@ -8,8 +8,12 @@ function domLoaded() {
    //document.getElementById("C_in").addEventListener("click", convC(), {signal: controller.signal});
    //document.getElementById("F_in").addEventListener("click", convF(), {signal: controller.signal});
 
-   document.getElementById("C_in").addEventListener("input", convC(), {signal: controller.signal});
-   document.getElementById("F_in").addEventListener("input", convF(), {signal: controller.signal});
+   document.getElementById("C_in").addEventListener("input", function(){	
+      document.getElementById("C_in").value = "111";
+   });
+   document.getElementById("F_in").addEventListener("input", function(){	
+      document.getElementById("F_in").value = "222";
+   });
    document.getElementById("convertButton").addEventListener("click", convB() );
    // Add event listeners to handle clearing the box that WAS NOT clicked,
    // e.g., the element C_in listens for 'input', with a callback fn to
@@ -41,7 +45,6 @@ function convB() {
 function convF() {
    boolF = true;
    boolC = false;
-   document.getElementById("C_in").value = "111";
 }
 
 function convC() {
