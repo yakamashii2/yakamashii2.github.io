@@ -21,7 +21,7 @@ function domLoaded() {
 // TODO: (Part of the above is to write the functions to be executed when the event handlers are invoked.)
 var boolC = false;
 var boolF = false;
-convB() {
+function convB() {
    //controller.abort();
    if(boolF == false && boolC == false){
       //put in a value monkey god damn
@@ -34,13 +34,13 @@ convB() {
    }
 }
 
-convF() {
+function convF() {
    boolF = true;
    boolC = false;
    document.getElementById("C_in").value = "";
 }
 
-convC() {
+function convC() {
    boolC = true;
    boolF = false;
    document.getElementById("C_in").value = "";
