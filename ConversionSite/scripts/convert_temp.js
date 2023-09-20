@@ -47,7 +47,7 @@ function convF() {
 function convC() {
    boolC = true;
    boolF = false;
-   document.getElementById("C_in").value = "420";
+   document.getElementById("F_in").value = "420";
 }
 
 function convertCtoF(C) {
