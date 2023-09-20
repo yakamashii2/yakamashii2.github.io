@@ -20,7 +20,24 @@ function domLoaded() {
       boolC = false;
       document.getElementById("C_in").value = "";
    });
-   document.getElementById("convertButton").addEventListener("click", convB() );
+   document.getElementById("convertButton").addEventListener("click", function(){
+      if(boolF == false && boolC == false){
+         //put in a value monkey god damn
+         document.getElementById("C_in").value = "";
+      }else if(boolF = true){
+         //convert F to C
+         document.getElementById("C_in").value = convertCtoF(document.getElementById("F_in").value);
+         document.getElementById("F_in").value = "";
+         
+      }else if(boolC = true){
+         //convert C to F
+         document.getElementById("F_in").value = convertFtoC(document.getElementById("C_in").value);
+         document.getElementById("C_in").value = "";
+         
+      }else {
+         //brick the code
+      }
+   } );
    // Add event listeners to handle clearing the box that WAS NOT clicked,
    // e.g., the element C_in listens for 'input', with a callback fn to
    // execute after that event does happen. 
@@ -33,18 +50,6 @@ function domLoaded() {
 
 }
 // TODO: (Part of the above is to write the functions to be executed when the event handlers are invoked.)
-function convB() {
-   //controller.abort();
-   if(boolF == false && boolC == false){
-      //put in a value monkey god damn
-   }else if(boolF = true){
-      //convert F to C
-   }else if(boolC = true){
-      //convert C to F
-   }else {
-      //brick the code
-   }
-}
 
 function convertCtoF(C) {
    return (C * (9/5) + 32);
