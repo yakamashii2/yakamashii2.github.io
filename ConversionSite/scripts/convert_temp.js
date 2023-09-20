@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", domLoaded);
-const controller = new AbortController;
+//const controller = new AbortController;
 // When the DOM has finished loading, add the event listeners.
 function domLoaded() {
    // TODO: Use addEventListener() to register a click event handler for the convert button.
