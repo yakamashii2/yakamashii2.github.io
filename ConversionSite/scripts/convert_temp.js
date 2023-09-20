@@ -37,13 +37,13 @@ function convB() {
 function convF() {
    boolF = true;
    boolC = false;
-   document.getElementById("C_in").value = "";
+   document.getElementById("C_in").data = "";
 }
 
 function convC() {
    boolC = true;
    boolF = false;
-   document.getElementById("C_in").value = "";
+   document.getElementById("C_in").data = "";
 }
 
 function convertCtoF(C) {
