@@ -4,8 +4,8 @@ const controller = new AbortController;
 function domLoaded() {
    // TODO: Use addEventListener() to register a click event handler for the convert button.
    // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#add_a_simple_listener
-   document.getElementById("c-in").addEventListener("input", convC, {signal: Controller.signal});
-   document.getElementById("f-in").addEventListener("input", convF, {signal: Controller.signal});
+   document.getElementById("C_in").addEventListener("input", convC, {signal: Controller.signal});
+   document.getElementById("F_in").addEventListener("input", convF, {signal: Controller.signal});
    document.getElementById("convertButton").addEventListener("click", convB );
    Controller.abort();
    // Add event listeners to handle clearing the box that WAS NOT clicked,
