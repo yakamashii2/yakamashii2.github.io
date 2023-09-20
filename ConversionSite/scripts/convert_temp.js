@@ -1,6 +1,8 @@
 window.addEventListener("DOMContentLoaded", domLoaded);
 //const controller = new AbortController;
 // When the DOM has finished loading, add the event listeners.
+var boolC = false;
+var boolF = false;
 function domLoaded() {
    // TODO: Use addEventListener() to register a click event handler for the convert button.
    // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#add_a_simple_listener
@@ -9,10 +11,14 @@ function domLoaded() {
    //document.getElementById("F_in").addEventListener("click", convF(), {signal: controller.signal});
 
    document.getElementById("C_in").addEventListener("input", function(){	
-      document.getElementById("F_in").value = "111";
+      boolC = true;
+      boolF = false;
+      document.getElementById("F_in").value = "";
    });
    document.getElementById("F_in").addEventListener("input", function(){	
-      document.getElementById("C_in").value = "222";
+      boolF = true;
+      boolC = false;
+      document.getElementById("C_in").value = "";
    });
    document.getElementById("convertButton").addEventListener("click", convB() );
    // Add event listeners to handle clearing the box that WAS NOT clicked,
@@ -27,8 +33,6 @@ function domLoaded() {
 
 }
 // TODO: (Part of the above is to write the functions to be executed when the event handlers are invoked.)
-var boolC = false;
-var boolF = false;
 function convB() {
    //controller.abort();
    if(boolF == false && boolC == false){
@@ -40,17 +44,6 @@ function convB() {
    }else {
       //brick the code
    }
-}
-
-function convF() {
-   boolF = true;
-   boolC = false;
-}
-
-function convC() {
-   boolC = true;
-   boolF = false;
-   document.getElementById("F_in").value = "222";
 }
 
 function convertCtoF(C) {
