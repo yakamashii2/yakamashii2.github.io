@@ -9,10 +9,10 @@ function domLoaded() {
    //document.getElementById("F_in").addEventListener("click", convF(), {signal: controller.signal});
 
    document.getElementById("C_in").addEventListener("input", function(){	
-      document.getElementById("C_in").value = "111";
+      document.getElementById("F_in").value = "111";
    });
    document.getElementById("F_in").addEventListener("input", function(){	
-      document.getElementById("F_in").value = "222";
+      document.getElementById("C_in").value = "222";
    });
    document.getElementById("convertButton").addEventListener("click", convB() );
    // Add event listeners to handle clearing the box that WAS NOT clicked,
