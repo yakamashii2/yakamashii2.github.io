@@ -24,12 +24,13 @@ function domLoaded() {
       if(boolF == false && boolC == false){
          //put in a value monkey god damn
          document.getElementById("C_in").value = "";
-      }else if(boolF = true){
+         document.getElementById("F_in").value = "";
+      }else if(boolF == true){
          //convert F to C
          document.getElementById("C_in").value = convertCtoF(document.getElementById("F_in").value);
          document.getElementById("F_in").value = "";
          
-      }else if(boolC = true){
+      }else if(boolC == true){
          //convert C to F
          document.getElementById("F_in").value = convertFtoC(document.getElementById("C_in").value);
          document.getElementById("C_in").value = "";
