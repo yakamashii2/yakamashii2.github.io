@@ -41,13 +41,13 @@ function convB() {
 function convF() {
    boolF = true;
    boolC = false;
-   document.getElementById("C_in").value = "420";
+   document.getElementById("C_in").value = "111";
 }
 
 function convC() {
    boolC = true;
    boolF = false;
-   document.getElementById("F_in").value = "420";
+   document.getElementById("F_in").value = "222";
 }
 
 function convertCtoF(C) {
