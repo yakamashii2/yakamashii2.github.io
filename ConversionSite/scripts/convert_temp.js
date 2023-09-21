@@ -41,17 +41,17 @@ function domLoaded() {
          document.getElementById("message").innerHTML = "";
          //convert F to C
          //you can have modular clean code, never.
-      if(document.getElementById("F_in").value <= 32 && document.getElementById("F_in").value > 200){
-         document.getElementById("weatherIcon").src = "images/cold.png"
-      }else if(document.getElementById("F_in").value >= 90 && document.getElementById("F_in").value < 200){
-         document.getElementById("weatherIcon").src = "images/hot.png"
-      }else if(document.getElementById("F_in").value > 32 && document.getElementById("F_in").value < 90){
-         document.getElementById("weatherIcon").src = "images/cool.png"
-      }else if(document.getElementById("F_in").value >= 200 || document.getElementById("F_in").value <= 200){
-         document.getElementById("weatherIcon").src = "images/dead.png"
-      }else if(document.getElementById("F_in").value == "" && document.getElementById("C_in").value == ""){
-         document.getElementById("weatherIcon").src = "images/C-F.png"
-      }
+         if(document.getElementById("F_in").value <= 32 && document.getElementById("F_in").value > -200){
+            document.getElementById("weatherIcon").src = "images/cold.png"
+         }else if(document.getElementById("F_in").value >= 90 && document.getElementById("F_in").value < 200){
+            document.getElementById("weatherIcon").src = "images/hot.png"
+         }else if(document.getElementById("F_in").value > 32 && document.getElementById("F_in").value < 90){
+            document.getElementById("weatherIcon").src = "images/cool.png"
+         }else if(document.getElementById("F_in").value >= 200 || document.getElementById("F_in").value <= -200){
+            document.getElementById("weatherIcon").src = "images/dead.png"
+         }else if(document.getElementById("F_in").value == "" && document.getElementById("C_in").value == ""){
+            document.getElementById("weatherIcon").src = "images/C-F.png"
+         }
          document.getElementById("C_in").value = convertCtoF(document.getElementById("F_in").value);
          document.getElementById("F_in").value = "";
          boolC = true;
@@ -61,18 +61,17 @@ function domLoaded() {
          //convert C to F
          document.getElementById("F_in").value = convertFtoC(document.getElementById("C_in").value);
          document.getElementById("C_in").value = "";
-         //you can have modular clean code, never.
-      if(document.getElementById("F_in").value <= 32 && document.getElementById("F_in").value > 200){
-         document.getElementById("weatherIcon").src = "images/cold.png"
-      }else if(document.getElementById("F_in").value >= 90 && document.getElementById("F_in").value < 200){
-         document.getElementById("weatherIcon").src = "images/hot.png"
-      }else if(document.getElementById("F_in").value > 32 && document.getElementById("F_in").value < 90){
-         document.getElementById("weatherIcon").src = "images/cool.png"
-      }else if(document.getElementById("F_in").value >= 200 || document.getElementById("F_in").value <= 200){
-         document.getElementById("weatherIcon").src = "images/dead.png"
-      }else if(document.getElementById("F_in").value == "" && document.getElementById("C_in").value == ""){
-         document.getElementById("weatherIcon").src = "images/C-F.png"
-      }
+         if(document.getElementById("F_in").value <= 32 && document.getElementById("F_in").value > -200){
+            document.getElementById("weatherIcon").src = "images/cold.png"
+         }else if(document.getElementById("F_in").value >= 90 && document.getElementById("F_in").value < 200){
+            document.getElementById("weatherIcon").src = "images/hot.png"
+         }else if(document.getElementById("F_in").value > 32 && document.getElementById("F_in").value < 90){
+            document.getElementById("weatherIcon").src = "images/cool.png"
+         }else if(document.getElementById("F_in").value >= 200 || document.getElementById("F_in").value <= -200){
+            document.getElementById("weatherIcon").src = "images/dead.png"
+         }else if(document.getElementById("F_in").value == "" && document.getElementById("C_in").value == ""){
+            document.getElementById("weatherIcon").src = "images/C-F.png"
+         }
          boolF = true;
          boolC = false;
       }else {
