@@ -22,21 +22,27 @@ function domLoaded() {
    });
    document.getElementById("convertButton").addEventListener("click", function(){
       if(boolF == false && boolC == false){
-         document.getElementById("message").value = "Enter a temperature to convert,";
+         document.getElementById("message").innerHTML = "Enter a temperature to convert,";
          //put in a value monkey god damn
          document.getElementById("C_in").value = "";
          document.getElementById("F_in").value = "";
       }else if(boolF == true){
+         document.getElementById("message").innerHTML = "";
          //convert F to C
          document.getElementById("C_in").value = convertCtoF(document.getElementById("F_in").value);
          document.getElementById("F_in").value = "";
+         boolC = true;
+         boolF = false;
       }else if(boolC == true){
+         document.getElementById("message").innerHTML = "";
          //convert C to F
          document.getElementById("F_in").value = convertFtoC(document.getElementById("C_in").value);
          document.getElementById("C_in").value = "";
-         
+         boolF = true;
+         boolC = false;
       }else {
-         //brick the code
+         document.getElementById("message").innerHTML = "";
+         //brick
       }
    } );
    // Add event listeners to handle clearing the box that WAS NOT clicked,
