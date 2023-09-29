@@ -12,8 +12,10 @@
     </style>
 </head>
 <body>
-    <?php"
+    <?php
+        "
         <h1>Form</h1>
+        
         <table>
             <tr>
                 <th>Key</th>
@@ -23,6 +25,7 @@
                 
             <tr>
         </table>
-    "?>
+        "
+    ?>
 </body>
 </html>
