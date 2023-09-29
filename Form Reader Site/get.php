@@ -12,16 +12,17 @@
     </style>
 </head>
 <body>
-    <h1>Form</h1>
-    <table>
-        <tr>
-            <th>Key</th>
-            <th>Value</th>
-        </tr>
-        <tr>
-            <td>Welcome <?php echo $_GET["name"]; ?></td>
-            <td>Your email address is: <?php echo $_GET["email"]; ?><td>
-        <tr>
-    </table>
+    <?php"
+        <h1>Form</h1>
+        <table>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                
+            <tr>
+        </table>
+    "?>
 </body>
 </html>
