@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Reader Site</title>
+</head>
+<body>
+    <form class="formy" action="https://www.cs.montana.edu/users/h48c334/form-viewer.php" method="get" autocomplete="on">
+        <h2>Select Stuff.</h2><br>
+        <!--<label for="first">First name:</label><br>
+        <input type="text" id="first" name="first"><br><br>
+        <label for="last">Last name:</label><br>
+        <input type="text" id="last" name="last"><br><br>
+        <input type="submit" value="Submit Form"><br>-->
+
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+        <label for="checkbox1">Checkbox 1</label><br>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+        <label for="checkbox2">Checkbox 2</label><br>
+        <input type="checkbox" id="checkbox3" name="checkbox3" value="checkbox3">
+        <label for="checkbox3">Checkbox 3</label><br>
+        <br>
+        <input type="radio" id="radio1" name="radiobuttons" value="radio1">
+        <label for="radio1">Radio 1</label><br>
+        <input type="radio" id="radio2" name="radiobuttons" value="radio2">
+        <label for="radio2">Radio 2</label><br>
+        <input type="radio" id="radio3" name="radiobuttons" value="radio3">
+        <label for="radio3">Radio 3</label><br>
+        <br>
+        <label for="singleselect">Singleselect</label><br>
+        <select name="singleselect" id="singleselect" size="3">
+            <option value="select1">Select1</option>
+            <option value="select2">Select2</option>
+            <option value="select3">Select3</option>
+        </select><br>
+        <br>
+        <label for="multiselect">Multiselect</label><br>
+        <select name="multiselect[]" id="multiselect" size="3" multiple>
+            <option value="multiselect1">Multi Select1</option>
+            <option value="multiselect2">Multi Select2</option>
+            <option value="multiselect3">Multi Select3</option>
+        </select><br>
+        <br>
+        <input type="submit" value="Submit Form"><br>
+    </form>
+</body>
+</html>
