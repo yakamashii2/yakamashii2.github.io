@@ -34,6 +34,7 @@ function divide(){
         document.getElementById("symbol").innerHTML = "/"
         document.getElementById("output").innerHTML = 0
     }else{
+        document.getElementById("symbol").innerHTML = "/"
         temp3 = +temp1.value / +temp2.value
         document.getElementById("output").innerHTML = temp3
     }
