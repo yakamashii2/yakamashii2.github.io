@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js" defer></script>
     <title>Responsive Site</title>
 </head>
 
@@ -23,22 +24,26 @@
             <source media="(min-width:601px)" srcset="img/machine1280w.jpg">
             <img src="img/machine640w.jpg" style="width: 100%;">
         </picture>
-        <div>
-            <input id="num1" type="number">
-            <label for="num1">peepee</label>
+        <div class="insertdiv">
+            <div>
+                <input id="temp1" class="insert" type="number">
+            </div>
+            <p id="symbol" class="pinsert">___</p>
+            <div>
+                <input id="temp2" class="insert" type="number">
+            </div>
+            <div class="mobilegrid">
+                <p class="pinsert"> = </p>
+                <p id="output" class="pinsert">___</p>
+            </div>>
         </div>
-        <p></p>
-        <div>
-            <input id="num2" type="number">
-            <label for="num2">poopoo</label>
-        </div>
-        <div>
-            <input id="plus" type="button" value="+">
-            <input id="minus" type="button" value="-">
-            <input id="multiply" type="button" value="X">
-            <input id="divide" type="button" value="/">
-            <input id="gte" type="button" value="&#8805">
-            <input id="lte" type="button" value="&#8804">
+        <div class="funcs">
+            <div><button id="add" class="func" type="button">+</button></div>
+            <div><button id="sub" class="func" type="button">-</button></div>
+            <div><button id="mult" class="func" type="button">x</button></div>
+            <div><button id="divi" class="func" type="button">/</button></div>
+            <div><button id="gte" class="func hidebtn" type="button">&#8805</button></div>
+            <div><button id="lte" class="func hidebtn" type="button">&#8804</button></div>
         </div>
     </div>
 </body>
